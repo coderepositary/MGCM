@@ -7,5 +7,7 @@ Environment: python 3.5 tensorflow 1.2.1 cuda 8.0 cudnn 5
 鉴于此，本章通过引入GAN，基于给定单品（如上衣）的多模态数据，生成与之互补（如下衣）且兼容的潜在模板。通过该模板捕捉互补单品之间的兼容规律，并将其视为辅助关系桥梁，增强单品与单品之间的兼容关系建模，提高模型效果。 
 本文设计的模型图如下，主代码见MGCM.PY: 
 ![QQ图片20220309164324](https://user-images.githubusercontent.com/43019981/157405657-713a5452-a0a6-4f08-a57b-e133c2921bdb.png)
+
+
 在CGAN的基础上，我们设计了一个生成器,如下图所示：
 ![QQ图片20220309164943](https://user-images.githubusercontent.com/43019981/157406073-43eaba4b-e257-4bc0-a4b4-01e3cc38e09b.png)
